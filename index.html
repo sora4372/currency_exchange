@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src = "main.js" defer></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="exchange-box">
+    <div class="dropdown">
+      <button class="dropbtn" id="from-button">USD</button>
+      <div class="dropdown-content" id="from-currency-list">
+        <a href="#">USD</a>
+        <a href="#">JPE</a>
+        <a href="#">KRW</a>
+      </div>
+    </div>
+    <div>
+      <input type="number" class = "input_currency" id = "from-currency" onkeyup = "convert('from')">
+      <div class = "unit" id = "from_unit">$</div>
+    </div>
+</div>
+<h1 id = "equal">|  |</h1>
+<div class="exchange-box">
+  <div class="dropdown">
+    <button class="dropbtn" id = "to-button">USD</button>
+    <div class="dropdown-content" id = "to-currency-list">
+      <a href="#">USD</a>
+      <a href="#">JPE</a>
+      <a href="#">KRW</a>
+    </div>
+  </div>
+  <div>
+    <input type="number" class = "input_currency" id = "to-currency" onkeyup = "convert('to')">
+    <div class = "unit" id = "to_unit">$</div>
+  </div>
+</div>
+</body>
+</html>
